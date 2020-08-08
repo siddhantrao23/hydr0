@@ -5,6 +5,7 @@
 // RTC Module glab variables
 RTC_DS3231 rtc;
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+// SDA=>A4 SCL=>A5
 
 // Relay pin
 int relay  = 5;
@@ -15,6 +16,8 @@ int CS = 7;
 int CLK = 6;
 int maxInUse = 1;
 MaxMatrix m(DIN, CS, CLK, maxInUse);
+
+
 
 // setup code
 void setup () 
@@ -53,7 +56,7 @@ void lightAll() {
     m.setColumn(7, B11111111);
 }
 
-void printDate()
+void printDate(DateTime now)
 {
   Serial.println("Current Date & Time: ");
   Serial.print(now.year(), DEC);
@@ -69,13 +72,13 @@ void printDate()
   Serial.print(now.minute(), DEC);
   Serial.print(':');
   Serial.print(now.second(), DEC);
-  Serial.println();  
+  Serial.println();    
 }
 
 void loop () 
 {
   DateTime now = rtc.now();
-  printDate();
+  printDate(now);
   
   int sec=now.second();
   if(sec == 0) {
