@@ -12,4 +12,4 @@ By monitoring the nutrient content, pH levels and providing Grow Lights and bubb
 ## Parts used
 
 * Arduino Nano (will work on all arduinos with slight change in pins used in the code)
-<img src"parts/nano.jpeg" style="float: right;"/>
+![nano](/parts/nano.jpeg)
