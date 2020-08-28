@@ -1,6 +1,7 @@
 # hydr0
 > An Arduino project for Monitoring your Hydroponic kit
 
+(This is my attempt at a open source hardware project lolidk)
 
 ## What is hydroponics?
 
