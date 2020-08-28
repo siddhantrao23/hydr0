@@ -27,3 +27,9 @@ By monitoring the nutrient content, pH levels and providing Grow Lights and bubb
 Other parts include Jumper cables, Breadboard, Mini USB Connector for Nano and battery clips.  
 
 **Note**: This will work on all arduinos with slight change in pins used in the code
+
+The fritzing diagram is in the `fritzing/` directory and the circuit is:
+
+<p align="center">
+<img src="fritzing/proto1_bb.png" width=600px> 
+</p>
