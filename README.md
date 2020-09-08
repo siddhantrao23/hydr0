@@ -12,6 +12,7 @@ Growing with hydroponics comes with many advantages, the biggest of which is a g
 By monitoring the nutrient content, pH levels and providing Grow Lights and bubbling the nutrient water, the growth of the plants can be further be improved.
 
 ## Prototype 1
+
 ### Parts and Sensors used
 
 | Part/Sensor | |
@@ -27,6 +28,12 @@ By monitoring the nutrient content, pH levels and providing Grow Lights and bubb
 Other parts include Jumper cables, Breadboard, Mini USB Connector for Nano and battery clips.  
 
 **Note**: This will work on all arduinos with slight change in pins used in the code
+
+### Modules needed
+- [RTClib](https://github.com/adafruit/RTClib)
+- [MaxMatrix](https://code.google.com/archive/p/arudino-maxmatrix-library/)
+
+### Fritzing
 
 The fritzing diagram is in the `fritzing/` directory and the circuit is:
 
